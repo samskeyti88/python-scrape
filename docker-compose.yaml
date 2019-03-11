@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python-scrape:
+    build: .
+    image: python-scrape
+    container_name: python-scrape
+    working_dir: /root/src
+    volumes:
+      - ./src/:/root/src/
+    tty: true
